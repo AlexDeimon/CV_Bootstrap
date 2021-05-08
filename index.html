@@ -33,7 +33,7 @@
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#habilidades">Habilidades</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#proyectos">Proyectos</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Educación</a></li>
-                <!--<li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>-->
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -49,7 +49,7 @@
       <div class="container">
         <div class="content-center">
           <div class="cc-profile-image"><a href="#"><img src="images/Diego.jpg" alt="Image"/></a></div>
-          <div class="h2 title">Diego Sandoval</div>
+          <div class="h2 title">&lt; Diego Sandoval /&gt;</div>
           <p class="category text-white">Ingeniero de Sistemas y Desarrollador Junior</p><a class="btn btn-primary" href="H.V Diego Alejandro Sandoval Fernández.docx" download data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Descargar CV</a>
         </div>
       </div>
@@ -72,7 +72,7 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">Sobre mi</div>
-            <p>Soy estudiante de ingeniería de sistemas.</p> <p>Me considero buen programador junior con intención de llegar a ser senior. Soy autodidacta y trabajo en proyectos de desarrollo propios y en equipo siempre aprendiendo más cada día.</p>
+            <p>Soy estudiante de ingeniería de sistemas de la Universidad Libre de Colombia.</p> <p>Soy un programador junior con la intención de llegar a ser senior. Soy autodidacta y trabajo en proyectos de desarrollo propios y en equipo, siempre aprendiendo más cada día.</p>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
@@ -84,7 +84,7 @@
             </div>
             <div class="row mt-3">
               <div class="col-sm-3"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-9">diegoa-sandovalf@unilibre.edu.co</div>
+              <div class="col-sm-9">diegoalejandro1999@gmail.com</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-3"><strong class="text-uppercase">Teléfono:</strong></div>
@@ -243,20 +243,6 @@
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>2006 - 2017</p>
-            <div class="h5">Primaria y Bachillerato</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body" style="background-image: url('images/lhemi.jpg'); background-size: cover">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-education-header">
             <p>2018 - Presente</p>
             <div class="h5">Ingeniería de sistemas</div>
             <div class="h6">sexto semestre</div>
@@ -273,11 +259,12 @@
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
             <p>2020</p>
-            <div class="h5">Diplomado</div>
+            <div class="h6">Diplomado PROGRAMA DE CONOCIMIENTO ACADÉMICO EN HABILIDADES DE PROGRAMACIÓN DE MISIÓN TIC 2022.</div>
+            <div class="h6">Universidad Nacional</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body"style="background-image: url('images/misiontic.jpg');">
+          <div class="card-body"style="background-image: url('images/misiontic.jpg'); background-size: cover">
           </div>
         </div>
       </div>
@@ -334,6 +321,7 @@
     </div>
   </div>
 </div>
+-->
 <div class="section" id="contact">
   <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
     <div class="container">
@@ -345,39 +333,38 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="https://formspree.io/your@email.com" method="POST">
-                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                    <form action="form.php" method="POST">
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" required/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                            <input class="form-control" type="text" id="Subject" name="Subject" placeholder="Asunto" required/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                            <textarea class="form-control" name="message" placeholder="Tu mensaje" required></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
+                          <button class="btn btn-primary" id="submit" name="submit" type="submit">Enviar</button>
                         </div>
                       </div>
                     </form>
@@ -385,12 +372,10 @@
                 </div>
                 <div class="col-md-6">
                   <div class="card-body">
-                    <p class="mb-0"><strong>Address </strong></p>
-                    <p class="pb-2">140, City Center, New York, U.S.A</p>
-                    <p class="mb-0"><strong>Phone</strong></p>
-                    <p class="pb-2">+1718-111-0011</p>
+                    <p class="mb-0"><strong>Teléfono</strong></p>
+                    <p class="pb-2">+57 3134473607</p>
                     <p class="mb-0"><strong>Email</strong></p>
-                    <p>anthony@company.com</p>
+                    <p>diegoalejandro1999@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -400,7 +385,6 @@
       </div>
     </div>
   </div>
--->
 </div></div>
     </div>
     <footer class="footer">
