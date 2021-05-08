@@ -33,7 +33,7 @@
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#habilidades">Habilidades</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#proyectos">Proyectos</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Educación</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>
+                <!--<li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>-->
               </ul>
             </div>
           </div>
@@ -333,39 +333,44 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <form action="form.php" method="POST">
+                    <form action="form.php" role="form" method="post">
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" required/>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Nombre"required value="<?php echo htmlspecialchars($_POST['name']); ?>"/>
+                            <?php echo "<p class='text-danger'>$errName</p>";?>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" id="Subject" name="Subject" placeholder="Asunto" required/>
+                            <input class="form-control" type="text" id="Subject" name="Subject" placeholder="Asunto" required value="<?php echo htmlspecialchars($_POST['Subject']); ?>"/>
+                            <?php echo "<p class='text-danger'>$errSubject</p>";?>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required/>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required value="<?php echo htmlspecialchars($_POST['email']); ?>"/>
+                            <?php echo "<p class='text-danger'>$errEmail</p>";?>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Tu mensaje" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Tu mensaje" required><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" id="submit" name="submit" type="submit">Enviar</button>
+                          <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Enviar"></input>
                         </div>
+                        <?php echo $result; ?>
                       </div>
                     </form>
                   </div>
@@ -385,7 +390,8 @@
       </div>
     </div>
   </div>
-</div></div>
+</div>
+</div>
     </div>
     <footer class="footer">
       <div class="container text-center">
@@ -399,6 +405,7 @@
         <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
     <script src="js/core/popper.min.js?ver=1.1.0"></script>
     <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
