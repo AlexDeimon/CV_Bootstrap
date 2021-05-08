@@ -321,7 +321,6 @@
     </div>
   </div>
 </div>
--->
 <div class="section" id="contact">
   <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
     <div class="container">
@@ -337,32 +336,28 @@
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
-                            <input class="form-control" type="text" id="name" name="name" placeholder="Nombre"required value="<?php echo htmlspecialchars($_POST['name']); ?>"/>
-                            <?php echo "<p class='text-danger'>$errName</p>";?>
+                            <input class="form-control" type="text" id="name" name="name" placeholder="Nombre" required/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
-                            <input class="form-control" type="text" id="Subject" name="Subject" placeholder="Asunto" required value="<?php echo htmlspecialchars($_POST['Subject']); ?>"/>
-                            <?php echo "<p class='text-danger'>$errSubject</p>";?>
+                            <input class="form-control" type="text" id="Subject" name="Subject" placeholder="Asunto" required/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required value="<?php echo htmlspecialchars($_POST['email']); ?>"/>
-                            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail" required/>
                           </div>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col">
                           <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Tu mensaje" required><?php echo htmlspecialchars($_POST['message']);?></textarea>
-                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                            <textarea class="form-control" name="message" placeholder="Tu mensaje" required></textarea>
                           </div>
                         </div>
                       </div>
@@ -370,7 +365,6 @@
                         <div class="col">
                           <input class="btn btn-primary" id="submit" name="submit" type="submit" value="Enviar"></input>
                         </div>
-                        <?php echo $result; ?>
                       </div>
                     </form>
                   </div>
@@ -391,6 +385,7 @@
     </div>
   </div>
 </div>
+-->
 </div>
     </div>
     <footer class="footer">
@@ -405,7 +400,6 @@
         <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
     <script src="js/core/popper.min.js?ver=1.1.0"></script>
     <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
